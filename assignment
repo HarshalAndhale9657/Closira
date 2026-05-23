@@ -1,0 +1,118 @@
+Assignment
+
+About Closira
+Closira is an AI-powered customer communication platform built for small and medium
+businesses (SMBs). It handles inbound customer enquiries across WhatsApp, email, and
+phone, responding using business-defined SOPs (Standard Operating Procedures) to respond
+accurately, qualify leads, schedule follow-ups, and escalate to human agents when required.
+As an AI Engineering Intern, you will be building the intelligence layer that powers these
+conversations, designing prompts, building agentic workflows, and ensuring the AI behaves
+safely and reliably in real customer interactions.
+Objective
+Build a simple AI-powered customer support workflow that demonstrates your ability to design
+prompts, structure multi-step AI logic, and ensure the system behaves safely and escalates
+when it should.
+Assignment
+What you will build
+A Python-based AI workflow using the OpenAI or Anthropic Claude API that handles a
+simulated customer conversation end-to-end across four stages:
+# Stage What it does
+1 FAQ Answering Answer inbound customer questions using a provided SOP data file
+(JSON or plain text). Respond only from the SOP; do not hallucinate
+facts not present in it.
+
+2 Lead
+Qualification
+
+Ask the customer 2–3 structured questions to qualify them (e.g.,
+business type, team size, current tools). Collect and store responses.
+
+3 Escalation
+Detection
+
+Detect when the AI should hand off to a human: low confidence,
+out-of-scope question, angry sentiment, or explicit escalation request.
+Flag and log the reason.
+
+4 Conversation
+Summary
+
+At the end of a session, generate a structured summary: customer
+intent, key details collected, SOP gaps identified, and recommended
+next action.
+
+SOP Data
+Use the following as your SOP source (or create your own for a fictional SMB). Your AI must
+answer from this data only:
+
+Sample SOP — Closira Demo Business
+Business: Bloom Aesthetics Clinic
+Hours: Mon–Sat, 9 am–7 pm
+Services: Botox (from £200), Fillers (from £250), Consultations (free)
+Booking: Via WhatsApp or website. 24hr cancellation required.
+Escalate if: complaint, medical question, pricing negotiation, or > 2
+unanswered questions.
+You may extend or replace this SOP with your own. Clearly document what data your AI
+operates on.
+
+Prompt Design Requirements
+You must submit a prompt_design.md file alongside your code covering:
+● System prompt: Your full system prompt for the AI, with reasoning for key design
+choices
+● Hallucination prevention: How you instruct the model to stay within SOP boundaries
+and avoid making up information
+● Confidence-based escalation: How you detect when the AI is uncertain and should
+hand off (e.g., explicit flag, threshold, output format)
+● Tone and persona: How you define the AI's communication style for an SMB context
+Expected AI Behaviours
+Your workflow must handle these scenarios correctly. Include test transcripts in your submission
+for each:
+1. In-SOP question: Customer asks, "What are your Botox prices?"
+AI answers accurately from SOP only
+2. Out-of-scope question: Customer asks something not in the SOP.
+AI acknowledges the gap and escalates rather than guessing
+3. Escalation trigger: Customer expresses frustration or a complaint
+AI detects sentiment and hands off with a reason
+4. Lead qualification: AI asks structured questions and produces a qualification summary
+5. Conversation summary: At session end, AI produces a clean, structured summary with
+intent, details, and next action
+
+Deliverables
+Submit all of the following before the deadline:
+● GitHub repo (public or shared) containing all code, clearly structured
+● prompt_design.md, your full system prompt, design decisions, hallucination prevention
+approach, and escalation logic
+● test_transcripts/ folder, one sample conversation per expected behaviour listed above
+(plain text or markdown)
+● README.md, setup instructions, how to run the workflow, dependencies, and any
+trade-offs or known limitations
+● 2-5 min video walkthrough explaining your working prototype (code)
+Evaluation Criteria
+Criterion What we look for
+AI workflow structure Logical, clean separation of the four stages. Clear flow from intake to
+
+summary.
+
+Prompt quality System prompt is precise, grounded, and well-reasoned. Tone and
+
+persona are appropriate for SMB customers.
+
+Reliability & safety Hallucination prevention is explicit. The AI stays within SOP boundaries
+
+and fails gracefully.
+
+Escalation logic Escalation triggers are clearly defined, reliably detected, and logged with
+
+reasons.
+
+SOP understanding Responses reflect product context. The candidate has thought about real
+
+SMB communication needs.
+
+Clarity of reasoning prompt_design.md is thorough. Decisions are explained, not just
+
+implemented.
+
+Submission deadline: 24 hours after receiving the assignment
+You do not need to build a full chat UI or frontend. A CLI or script that runs a conversation is
+sufficient.

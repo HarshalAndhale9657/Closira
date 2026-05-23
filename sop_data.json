@@ -1,0 +1,126 @@
+{
+  "business": {
+    "name": "Bloom Aesthetics Clinic",
+    "type": "Aesthetics & Cosmetic Treatments Clinic",
+    "tagline": "Enhancing natural beauty with expert care",
+    "location": "Central London, UK",
+    "phone": "+44 20 7123 4567",
+    "email": "hello@bloomaesthetics.co.uk",
+    "website": "https://www.bloomaesthetics.co.uk"
+  },
+  "hours": {
+    "monday": "9:00 AM – 7:00 PM",
+    "tuesday": "9:00 AM – 7:00 PM",
+    "wednesday": "9:00 AM – 7:00 PM",
+    "thursday": "9:00 AM – 7:00 PM",
+    "friday": "9:00 AM – 7:00 PM",
+    "saturday": "9:00 AM – 7:00 PM",
+    "sunday": "Closed",
+    "bank_holidays": "Closed — please check our website for updated schedules"
+  },
+  "services": [
+    {
+      "name": "Botox (Anti-Wrinkle Injections)",
+      "starting_price": "£200",
+      "description": "Botulinum toxin injections to reduce the appearance of fine lines and wrinkles. Typical treatment areas include forehead, frown lines, and crow's feet.",
+      "duration": "20–30 minutes",
+      "results_timeline": "Results visible within 3–7 days, full effect at 2 weeks",
+      "longevity": "Typically lasts 3–4 months",
+      "downtime": "Minimal — most patients return to normal activities immediately"
+    },
+    {
+      "name": "Dermal Fillers",
+      "starting_price": "£250",
+      "description": "Hyaluronic acid-based fillers for lip enhancement, cheek augmentation, nasolabial folds, and jawline contouring.",
+      "duration": "30–45 minutes",
+      "results_timeline": "Immediate results with final results after swelling subsides (1–2 weeks)",
+      "longevity": "Typically lasts 6–12 months depending on area and product used",
+      "downtime": "Mild swelling and bruising possible for 2–5 days"
+    },
+    {
+      "name": "Initial Consultation",
+      "price": "Free",
+      "description": "A complimentary face-to-face consultation with one of our experienced practitioners to discuss your goals, assess suitability, and create a personalised treatment plan.",
+      "duration": "15–20 minutes",
+      "note": "No obligation to proceed with treatment after consultation"
+    }
+  ],
+  "booking": {
+    "methods": [
+      "WhatsApp: Message us at +44 20 7123 4567",
+      "Website: Book online at www.bloomaesthetics.co.uk/book"
+    ],
+    "cancellation_policy": "We require a minimum of 24 hours' notice for cancellations or rescheduling. Late cancellations or no-shows may be subject to a £50 fee.",
+    "deposit": "No deposit required for consultations. A £50 deposit may be required for treatment bookings, deducted from your treatment cost.",
+    "waiting_list": "If your preferred slot is unavailable, we can add you to our cancellation waiting list."
+  },
+  "policies": {
+    "age_requirement": "All patients must be 18 years or older.",
+    "consultation_first": "A consultation is required before any first-time treatment to ensure suitability and safety.",
+    "patch_test": "Patch tests may be required for certain treatments; your practitioner will advise during your consultation.",
+    "medical_disclaimer": "All treatments are carried out by qualified, insured practitioners. Individual results may vary. We do not provide medical diagnoses or advice — please consult your GP for medical concerns.",
+    "payment_methods": "We accept cash, debit card, credit card, and bank transfer. Payment is due at the time of treatment.",
+    "refund_policy": "Due to the nature of aesthetic treatments, refunds are not offered once a treatment has been administered. If you are unhappy with your results, please contact us to arrange a complimentary review appointment."
+  },
+  "escalation_rules": {
+    "triggers": [
+      "Customer complaint or expression of dissatisfaction",
+      "Medical question requiring clinical judgment (e.g., safety, side effects, contraindications)",
+      "Pricing negotiation or requests for discounts",
+      "More than 2 consecutive questions the AI cannot answer from the SOP",
+      "Explicit request to speak to a human, manager, or supervisor",
+      "Mention of adverse reactions, allergic reactions, or emergencies"
+    ],
+    "escalation_response": "I understand this is important to you. Let me connect you with a member of our team who can best help you with this. A team member will be with you shortly.",
+    "escalation_channels": "The query will be routed to the next available human agent via the internal dashboard."
+  },
+  "faqs": [
+    {
+      "question": "What are your Botox prices?",
+      "answer": "Our Botox (anti-wrinkle injection) treatments start from £200. The final price depends on the number of areas treated. We'll provide a personalised quote during your free consultation."
+    },
+    {
+      "question": "How do I book an appointment?",
+      "answer": "You can book via WhatsApp by messaging us at +44 20 7123 4567, or online through our website at www.bloomaesthetics.co.uk/book."
+    },
+    {
+      "question": "What are your opening hours?",
+      "answer": "We're open Monday to Saturday, 9:00 AM to 7:00 PM. We're closed on Sundays and bank holidays."
+    },
+    {
+      "question": "Do I need a consultation first?",
+      "answer": "Yes, a free initial consultation is required before any first-time treatment. This allows our practitioner to assess suitability and create a personalised treatment plan."
+    },
+    {
+      "question": "What is your cancellation policy?",
+      "answer": "We require 24 hours' notice for cancellations or rescheduling. Late cancellations or no-shows may be subject to a £50 fee."
+    },
+    {
+      "question": "Do you offer payment plans or financing?",
+      "answer": "Information about payment plans is not currently available in our records. Please contact our team directly for the most up-to-date information on financing options."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept cash, debit card, credit card, and bank transfer. Payment is due at the time of treatment."
+    },
+    {
+      "question": "Is there any downtime after Botox?",
+      "answer": "Downtime after Botox is minimal. Most patients return to normal activities immediately. We recommend avoiding strenuous exercise, lying flat, or rubbing the treated area for 4 hours after treatment."
+    },
+    {
+      "question": "How long do fillers last?",
+      "answer": "Dermal fillers typically last 6–12 months, depending on the area treated and the product used. Your practitioner will discuss expected longevity during your consultation."
+    },
+    {
+      "question": "What is the minimum age for treatment?",
+      "answer": "All patients must be 18 years or older to receive treatment at Bloom Aesthetics Clinic."
+    }
+  ],
+  "tone_guidelines": {
+    "style": "Warm, professional, and reassuring",
+    "register": "Conversational but polished — avoid overly clinical or overly casual language",
+    "empathy": "Always acknowledge the customer's concerns and goals before providing information",
+    "brevity": "Keep responses concise and scannable — customers are often messaging on mobile",
+    "closing": "End responses with a clear next step or call to action (e.g., booking a consultation)"
+  }
+}
