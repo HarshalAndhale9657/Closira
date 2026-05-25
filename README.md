@@ -57,7 +57,7 @@ Detector     +------------------+
 
 ```bash
 # Clone and enter the project
-git clone <repo-url>
+git clone https://github.com/HarshalAndhale9657/Closira
 cd BreakOut
 
 # Create a virtual environment (recommended)
